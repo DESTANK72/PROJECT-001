@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="favicon.ico" type="favicon.ico">
+      <br></br>
+      <meta charset="utf-8">
+      <title>
+        Directory
+      </title>
+   </head>
+
+   <body>
+
+
+
+
+      <b>
+        <marquee style="color:White" >Directory for multiple websites, Navigate the internet!</marquee>
+
+      <b>
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+         .button {
+         background-color: #f44336; /* Green */
+         border: red;
+         color: black;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+         .button2 {background-color: #f44336;} /* red */
+         .button3 {background-color: #f44336;} /* Red */
+         .button4 {background-color: #f44336; color: red;} /*red */
+         .button5 {background-color: #f44336;} /* red */
+         body  {
+         background-image: url("3321.jpg");
+         background-color: #cccccc
+         background-repeat: no-repeat;
+         }
+         div.sticky {
+         position: -webkit-sticky;
+         position: sticky;
+         top: 0;
+         padding: 5px;
+         background-color:	#E42020;
+         border: 2px solid #C0C0C0;
+         }
+         .parallax {
+  /* The image used */
+          background-image: url("bob4.png");
+
+  /* Set a specific height */
+          min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+          .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            }
+            .navbar a {
+              float: left;
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 20px;
+              text-decoration: none;
+            }
+            .btn-group button {
+              background-color: #FF0000; /* Green background */
+              border: 1px solid black; /* Green border */
+              color: black; /* White text */
+              padding: 100px 150px; /* Some padding */
+              cursor: crosshair;; /* Pointer/hand icon */
+              float: left; /* Float the buttons side by side */
+              font-family: 'Times New Roman', cursive;
+            }
+
+            .btn-group button:not(:last-child) {
+              border-right: none; /* Prevent double borders */
+            }
+
+   /* Clear floats (clearfix hack) */
+         .btn-group:after {
+           content: "";
+           clear: both;
+           display: table;
+   }
+
+   /* Add a background color on hover */
+         .btn-group button:hover {
+           background-color: #800000;
+   }
+      </style>
+    <div class="sticky">
+      <ul>
+        <li><a  style="font-family: 'Goldman', cursive; font-size: 35px class="active" href="index.html"" >Home</a></li>
+        <li><a  style="font-family: 'Goldman', cursive; font-size: 35px class="active" href="News.html"">News</a></li>
+        <li><a  style="font-family: 'Goldman', cursive; font-size: 35px class="active" href="Sports.html"">Sports</a></li>
+        <li><a  style="font-family: 'Goldman', cursive; font-size: 35px class="active" href="Example.com"">TBD</a></li>
+      </ul>
+</div>
+      <BR><br>
+        <div class="parallax"></div>
+
+<button style="background-color: #9a2323">
+<br><br>
+
+      <input type="button" value="Calculator" class="button">
+      </input>
+      <b>
+      <h6 style="color:red">
+      Put your 1st number here </h1><b>
+      <input type="number" Id="Input1">
+      <br><br>
+      <b>
+      <h6 style="color:red">
+      Put your 2nd number here </h1><b>
+      <input type="number" Id="Input2">
+      <br><br>
+      <input type="number" id="output">
+      <br><br>
+      <br><br>
+      <button onclick="myadd()">Do addition</button>
+      <script>
+         function myadd()
+         {
+           document.getElementById("output").value=+document.getElementById("Input1").value + +document.getElementById("Input2").value
+         }
+      </script>
+      <button onclick="mymultiplication()">Do multiplication</button>
+      <script>
+         function mymultiplication()
+         {
+           document.getElementById("output").value=+document.getElementById("Input1").value * +document.getElementById("Input2").value
+         }
+      </script>
+
+      <button onclick="mydivs()">Do division</button>
+      <script>
+         function mydivs()
+         {
+           document.getElementById("output").value=+document.getElementById("Input1").value / +document.getElementById("Input2").value
+         }
+      </script>
+
+      <button onclick="mysubs()">Do subtraction</button>
+      <script>
+         function mysubs()
+         {
+           document.getElementById("output").value=+document.getElementById("Input1").value - +document.getElementById("Input2").value
+         }
+      </script>
+      <br></br>
+      <div ID="BUTTON CHANGER">
+      </div>
+      <button onclick="window.location.href='news.html'" class="button"  style="font-family: 'Goldman', cursive; font-size: 35px">News Section</button>
+        <button onclick="window.location.href='sports.html'" class="button"  style="font-family: 'Goldman', cursive; font-size: 35px">Sports Section</button>
+      <br><br>
+
+      <br></br>
+      <select name="bob" ID="bob">
+         <option value="dropbox">Which do you like better?</option>
+         <option value="Basketball">Basketball</option>
+         <option value="Tennis">Tennis</option>
+      </select>
+      <br> <br>
+      <b>
+      <h6 style="color:red">
+      What is your favorite food? </h1><b>
+      <input type="radio" id="BOB" name="Options" value="Option 1">
+      <label for="BOB">Pizza<br></br>
+      <input type="radio" id="JEFF" name="Options" value="JEFFF">
+      <label for="JEFF">Noodles/Pasta</label><br></br>
+      <input type="radio" id="BOB E" name="Options" value="BOB E">
+      <label for="BOB E">Rice</label>
+      <BR><br>
+        <textarea> Put feedback here
+        </textarea>
+        <dialog> bob</dialog>
+   </body>
+</html>
